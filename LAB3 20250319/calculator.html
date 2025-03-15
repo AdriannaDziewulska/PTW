@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function calculate() {
+            const x = parseInt(document.getElementById("arg1").value);
+            const y = parseInt(document.getElementById("arg2").value);
+            const operator = document.getElementById("operator").value;
+            let result;
+
+            switch (operator) {
+                case '+':
+                    result = x + y;
+                    break;
+                case '-':
+                    result = x - y;
+                    break;
+                case '*':
+                    result = x * y;
+                    break;
+                case '/':
+                    result = x / y;
+                    break;
+                default:
+                    result = "Błąd";
+            }
+
+            document.getElementById("result").innerHTML = `${x} ${operator} ${y} = ${result}`;
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="gallery.html">Galeria</a></li>
+                <li><a href="calculator.html">Kalkulator</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Kalkulator</h1>
+        <input id="arg1" type="number" placeholder="Pierwsza liczba">
+        <input id="arg2" type="number" placeholder="Druga liczba">
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <button onclick="calculate()">=</button>
+        <p id="result"></p>
+    </section>
+</body>
+
+</html>

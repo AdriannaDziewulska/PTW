@@ -1,0 +1,33 @@
+		<!DOCTYPE HTML>
+		<html lang="pl">
+   		 <head>
+   		     <title></title>
+   		     <style>
+   	        	 body {background-color:#F1E0C5;}        
+			</style>
+ 		   </head>
+		</html>
+
+		<body>
+heading			<h1></h1> 1-6
+paragraph		<p></p>
+endl			<br>
+Zdj			<img src="" alt="" width="" height="">
+Link			<a href=""></a>
+unordered list		<ul>
+				<li></li>
+			</ul>
+
+ordered list		<ol>
+				<li></li>
+			</ol>
+Tabela			<table>
+        			<tr>
+            				<th>NAZWA NAGŁÓWKA</th>
+        			</tr>
+        			<tr>
+            				<td>DANE TABELI</td>
+            		        </tr>
+  			</table>
+
+		</body>

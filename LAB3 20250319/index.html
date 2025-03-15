@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona główna</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function changeContent() {
+            document.getElementById("demo").innerHTML = "Zawartość została zmieniona!";
+        }
+
+        function changeStyle() {
+            document.getElementById("demo").style.color = "#B00721";
+        }
+
+        function hideElement() {
+            document.getElementById("demo").style.display = "none";
+        }
+
+        function showElement() {
+            document.getElementById("demo").style.display = "block";
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="gallery.html">Galeria</a></li>
+                <li><a href="calculator.html">Kalkulator</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Witaj na stronie głównej</h1>
+        <p id="demo">To jest interaktywny element. Spróbuj go zmienić!</p>
+        <button onclick="changeContent()">Zmień zawartość</button>
+        <button onclick="changeStyle()">Zmień kolor</button>
+        <button onclick="hideElement()">Ukryj element</button>
+        <button onclick="showElement()">Pokaż element</button>
+    </section>
+</body>
+
+</html>
