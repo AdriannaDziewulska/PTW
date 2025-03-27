@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul class="jnav">
+            <li><a href="Filmy.html" class="wybrany">Filmy</a></li>
+            <li><a href="TechnologieProgramistyczne.html">Technologie programistyczne</a></li>
+            <li><a href="PrzelicznikWalut.html">Przelicznik walut</a></li>
+        </ul>
+    </nav>
+    <h1>Lista Filmów</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Lp.</th>
+                <th>Tytuł</th>
+                <th>Reżyser</th>
+                <th>Rok produkcji</th>
+            </tr>
+        </thead>
+        <tbody id="filmTable">
+          <tr>
+            <td>1.</td>
+            <td>Culpa mia</td>
+            <td>Domingo Gonzáleza</td>
+            <td>2023</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>El Cid</td>
+            <td>Jaime Lorente</td>
+            <td>2020</td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>El inocente</td>
+            <td>Óscar Pedraza</td>
+            <td>2021</td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>A través de mi ventana</td>
+            <td>Marçal Forés</td>
+            <td>2022</td>
+          </tr>
+        </tbody>
+    </table>
+    <div>
+        <input type="text" id="title" placeholder="Tytuł filmu">
+        <input type="text" id="director" placeholder="Reżyser">
+        <input type="number" id="year" placeholder="Rok produkcji">
+        <button id="addFilm">Dodaj film</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

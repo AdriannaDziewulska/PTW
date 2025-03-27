@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f0f0f0, #d9e4f5);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+nav {
+    background: #4a90e2;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.jnav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background: #357ABD;
+    border-radius: 8px;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+}
+
+nav a:hover {
+    background: #285a8e;
+}
+
+nav .wybrany {
+    background: #1e3d63;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #4a90e2;
+    color: white;
+}
+
+tbody > tr:nth-child(odd) {
+    background: #e3fde3;
+}
+
+tbody > tr:hover {
+    background: #cce7ff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+input, select {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #4a90e2;
+    outline: none;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+button {
+    padding: 10px 20px;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    margin-left: 5px;
+}
+
+.jbutton{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+button:hover {
+    background: #357ABD;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+li {
+    padding: 10px;
+    background: white;
+    border: 1px solid #ddd;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li:hover {
+    background: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+    table {
+        width: 95%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+}

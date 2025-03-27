@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przelicznik walut</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul class="jnav">
+            <li><a href="Filmy.html">Filmy</a></li>
+            <li><a href="TechnologieProgramistyczne.html">Technologie programistyczne</a></li>
+            <li><a href="PrzelicznikWalut.html" class="wybrany">Przelicznik walut</a></li>
+        </ul>
+    </nav>
+    <h1>Przelicznik walut</h1>
+    <input type="number" id="amount" placeholder="Kwota w zł">
+    <select id="currency">
+        <option value="eur">Euro</option>
+        <option value="usd">Dolar</option>
+    </select>
+    <button id="convert">Przelicz</button>
+    <p id="result"></p>
+    <script src="script.js"></script>
+</body>
+</html>
