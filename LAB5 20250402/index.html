@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodawanie Kontaktów</title>
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+    <h1>Dodaj Kontakt</h1>
+    <div class="form-container">
+        <input type="text" id="firstName" placeholder="Imię">
+        <input type="text" id="lastName" placeholder="Nazwisko">
+        <input type="email" id="email" placeholder="Email">
+        <input type="number" id="age" placeholder="Wiek">
+        <input type="date" id="birthDate">
+        <select id="gender">
+            <option value="Kobieta">Kobieta</option>
+            <option value="Mężczyzna">Mężczyzna</option>
+        </select>
+        <select id="group">
+            <option value="rodzina">Rodzina</option>
+            <option value="przyjaciele">Przyjaciele</option>
+            <option value="praca">Praca</option>
+            <option value="znajomi">Znajomi</option>
+        </select>
+        <button id="addContact" class="button">Dodaj kontakt</button>
+        <img src="Images/cat.png" id="pet" class="pet">
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>LP</th>
+                <th>Imię</th>
+                <th>Nazwisko</th>
+                <th>Email</th>
+                <th>Wiek</th>
+                <th>Data urodzenia</th>
+                <th>Płeć</th>
+                <th>Grupa</th>
+            </tr>
+        </thead>
+        <tbody id="contactsTable"></tbody>
+    </table>
+    <script src="Scripts/script.js"></script>
+</body>
+</html>
