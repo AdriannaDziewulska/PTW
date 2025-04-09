@@ -1,0 +1,168 @@
+/* Styl ogólny */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fdfdfd;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid #ddd;
+    margin: 40px 0;
+}
+
+#header {
+    color: darkgreen;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Sekcja potraw wielkanocnych */
+#easter-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#easter-list {
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#easter-list li {
+    background-color: #f2f2f2;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* Styl przycisków */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: monospace;
+    box-shadow: 2px 2px 0px #666;
+    border: 1px solid #444;
+    background-color: #eee;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+button:active {
+    box-shadow: none;
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+/* Formularze i inputy */
+input, select {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Styl klas życzeń */
+.style1 {
+    color: darkblue;
+    border: 2px dashed navy;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.style2 {
+    color: darkred;
+    background-color: lightyellow;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* Paragrafy opisowe */
+.desc {
+    margin: 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Galeria */
+#gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+#mainImg {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+}
+
+#thumbs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#thumbs img {
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    width: 100px;
+    height: auto;
+    transition: border-color 0.3s ease;
+}
+
+#thumbs img:hover {
+    border-color: orange;
+}
+
+/* Lista zadań */
+#todoList {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 500px;
+}
+
+#todoList li {
+    padding: 10px;
+    background-color: #fafafa;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#todoList input[type="checkbox"] {
+    transform: scale(1.2);
+}

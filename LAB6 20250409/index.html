@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>WIELKANOC</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Scripts/script.js" defer></script>
+</head>
+<body>
+
+<hr>
+<h2 id="header">Witaj na stronie!</h2>
+
+<hr>
+<button id="toggleBtn">Pokaż/Ukryj</button>
+<div id="easterDishes">
+    <ol>
+        <li>Babka wielkanocna</li>
+        <li>Żurek</li>
+        <li>Jajka faszerowane</li>
+    </ol>
+</div>
+
+<hr>
+<p class="desc">Lubię święta z rodziną.</p>
+<p class="desc">Uwielbiam malować pisanki.</p>
+<p class="desc">Spacer po lesie w święta to relaks.</p>
+
+<select id="colorSelect">
+    <option value="red">Czerwony</option>
+    <option value="green">Zielony</option>
+    <option value="blue">Niebieski</option>
+    <option value="purple">Fioletowy</option>
+    <option value="black">Czarny</option>
+</select>
+<button id="textColorBtn">Zmień kolor tekstu</button>
+<button id="bgColorBtn">Zmień tło</button>
+
+<hr>
+<p id="wishes" class="style1">Wesołych Świąt Wielkanocnych!</p>
+<button id="style1Btn">Styl 1</button>
+<button id="style2Btn">Styl 2</button>
+
+<hr>
+<input type="text" id="textInput" placeholder="Wpisz życzenia...">
+<p id="outputText"></p>
+
+<hr>
+<div>
+    <img id="mainImg" src="Images/pisanki1.jpg" width="300">
+    <div id="thumbs">
+        <img src="Images/pisanki1.jpg" width="100">
+        <img src="Images/pisanki2.jpg" width="100">
+        <img src="Images/pisanki3.jpg" width="100">
+        <img src="Images/pisanki4.jpg" width="100">
+    </div>
+</div>
+
+<hr>
+<input type="text" id="todoInput" placeholder="Dodaj zadanie">
+<button id="addTaskBtn">Dodaj</button>
+<ul id="todoList"></ul>
+
+</body>
+</html>
