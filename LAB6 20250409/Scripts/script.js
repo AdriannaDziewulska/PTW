@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    alert("Strona została załadowana!");
     $("#header").delay(3000).slideUp();
 
     $("#toggleBtn").click(function () {
@@ -28,7 +29,7 @@ $(document).ready(function () {
         $("#outputText").text($(this).val());
     });
 
-    $("#thumbs").on("click", "img", function () {
+    $("#thumbs").on("click","img", function () {
         let src = $(this).attr("src");
         $("#mainImg").attr("src", src);
     });

@@ -23,7 +23,6 @@ hr {
     margin-bottom: 10px;
 }
 
-/* Sekcja potraw wielkanocnych */
 #easter-section {
     display: flex;
     align-items: center;
@@ -48,7 +47,6 @@ hr {
     font-weight: bold;
 }
 
-/* Styl przycisków */
 button {
     padding: 10px 20px;
     font-size: 1rem;
@@ -72,7 +70,6 @@ button:active {
     left: 2px;
 }
 
-/* Formularze i inputy */
 input, select {
     padding: 10px;
     font-size: 1rem;
@@ -82,7 +79,6 @@ input, select {
     box-sizing: border-box;
 }
 
-/* Styl klas życzeń */
 .style1 {
     color: darkblue;
     border: 2px dashed navy;
@@ -97,7 +93,6 @@ input, select {
     border-radius: 20px;
 }
 
-/* Paragrafy opisowe */
 .desc {
     margin: 0;
     padding: 10px;
@@ -107,7 +102,6 @@ input, select {
     width: 100%;
 }
 
-/* Galeria */
 #gallery {
     display: flex;
     flex-direction: column;
@@ -144,7 +138,6 @@ input, select {
     border-color: orange;
 }
 
-/* Lista zadań */
 #todoList {
     list-style-type: none;
     padding: 0;
